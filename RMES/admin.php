@@ -8,7 +8,7 @@ require_once(__DIR__."/api/bdd.php");
 function display_admin()
 {
   // On lance la connexion avec la bdd
-  $bdd = new BDD($_ENV["BDD_SERVER"], $_ENV["BDD_USER_NAME"], "", $_ENV["BDD_NAME"]);
+  $bdd = new BDD($_ENV["BDD_SERVER"], $_ENV["BDD_USER_NAME"], $_ENV["BDD_PASSWORD"], $_ENV["BDD_NAME"]);
 
   // TO DO : Ajouter la possibilité d'ajouter un article depuis le site
   echo "<a href=''>Ajouter un article</a>";

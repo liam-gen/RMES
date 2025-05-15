@@ -1,1 +1,7 @@
 .vscode/
+.env
+**/vendor/
+/vendor/
+**/api/
+/api_idea/
+.htaccess

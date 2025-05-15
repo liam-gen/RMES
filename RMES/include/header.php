@@ -1,7 +1,8 @@
 <?php
 // Accès à l'environnement de travail
-require_once realpath("./vendor/autoload.php");
-use Dotenv\Dotenv;$dotenv = Dotenv::createImmutable(".");
+require_once realpath(__DIR__."/../vendor/autoload.php");
+use Dotenv\Dotenv;
+$dotenv = Dotenv::createImmutable(__DIR__."/../");
 $dotenv->load();
 ?>
 
@@ -13,7 +14,7 @@ $dotenv->load();
 
     <!-- Dependencies -->
 
-    <link href="./assets/style.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/winbox@0.2.82/dist/css/winbox.min.css" rel="stylesheet">

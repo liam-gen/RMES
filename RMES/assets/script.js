@@ -22,7 +22,7 @@ init();
 
 /* Load schools */
 
-fetch("api/schools").then(res => res.json()).then(res => {
+fetch("api/config/schools").then(res => res.json()).then(res => {
   if(res.status == 200){
     let wrapper = document.querySelector(".slider-ecoles .swiper-wrapper");
 
@@ -89,7 +89,7 @@ fetch("api/schools").then(res => res.json()).then(res => {
 
 /* Load developers */
 
-fetch("api/developers").then(res => res.json()).then(res => {
+fetch("api/config/developers").then(res => res.json()).then(res => {
   if(res.status == 200){
     let wrapper = document.querySelector(".slider-devs .swiper-wrapper")
     res.data.forEach(developer => {
